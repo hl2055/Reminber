@@ -66,4 +66,4 @@ Credits:
 	Other:
 		html5shiv.js (@afarkas @jdalton @jon_neal @rem)
 		Respond.js (j.mp/respondjs)
-		Skel (skel.io)
+		Skel (skel.io)addNewLine
