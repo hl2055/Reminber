@@ -22,7 +22,7 @@ Signup Form:
 	In either case, there are two ways to go:
 
 	1. The conventional (non-AJAX) way, which pretty much comes down to pointing the form's "action"
-	attribute to your service/script URL. If you go this route, remove the entire "Signup Form" codeddd
+	attribute to your service/script URL. If you go this route, remove the entire "Signup Form" code
 	block from assets/js/main.js (since it's not needed for this approach).
 
 	-or-
