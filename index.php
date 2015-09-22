@@ -1,41 +1,39 @@
-<!DOCTYPE HTML>
-<!--
-	Eventually by HTML5 UP
-	html5up.net | @n33co
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
+<!DOCTYPE html>
 <html>
-	<head>
-		<title>Online Reminder</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
-		<link rel="stylesheet" href="assets/css/main.css" />
-		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
-		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
-	</head>
-	<body>
+    <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">   
+    <link href="/src/bt/css/bootstrap.min.css" rel="stylesheet">
         
-        <!-- javascript sdk -->
-        <div id="fb-root">
-<script>(function(d, s, id) {
-  var js, fjs = d.getElementsByTagName(s)[0];
-  if (d.getElementById(id)) return;
-  js = d.createElement(s); js.id = id;
-  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.4";
-  fjs.parentNode.insertBefore(js, fjs);
-}(document, 'script', 'facebook-jssdk'));</script>
+    <title>Online Reminder</title>
+    </head>
+    
+    <body>
+        <!-- example -->
+        <form class="main">
+            <div class="row">
+                
+                <div class="col-xs-12 col-sm-3"><p class="text-center">Centered Text</p></div>
+                
             </div>
-
-		<!-- Header -->
-			<header id="header">
-				<h1>Reminder</h1>
-				<p>We just want to remind you in a simple way.</a>.</p>
-			</header>
-
-        <!-- Facebook Login Button -->
-        <div class="fb-login-button" data-max-rows="1" data-size="medium" data-show-faces="false" data-auto-logout-link="false">
-        	<?php
+        
+            <div class="row">
+                
+                <div class="col-xs-12 col-sm-6"><p class="text-center">Don't forget to do.Don't forget to do.Don't forget to do.Don't forget to do.Don't forget to do.Don't forget to do.Don't forget to do.Don't forget to do.Don't forget to do.Don't forget to do.Don't forget to do.Don't forget to do.Don't forget to do.Don't forget to do.Don't forget to do.></div>
+                
+            </div>
+            
+            
+            
+            <div class="atom">
+                <p id="title" class="text-center">Reminder</p>
+            </div>
+            <div class="atom">
+                <p id="contents" class="text-center">Don't forget to do.Don't forget to do.Don't forget to do.Don't forget to do.Don't forget to do.Don't forget to do.Don't forget to do.Don't forget to do.Don't forget to do.Don't forget to do.Don't forget to do.Don't forget to do.Don't forget to do.Don't forget to do.Don't forget to do.</p>
+            </div>
+            <div class="atom well center-block">
+            <?php
 				session_start();
 				require_once __DIR__ . '/src/Facebook/autoload.php';
 				
@@ -50,11 +48,7 @@
 				$loginUrl = $helper -> getLoginUrl('http://www.reminber.com/login-callback.php');
 				echo '<a class="btn btn-primary" href="' . htmlspecialchars($loginUrl) . '">Log in with Facebook!</a>';	
 			?>
-        </div>
-
-		<!-- Scripts -->
-			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
-			<script src="assets/js/main.js"></script>
-
-	</body>
+            </div>
+        </form>
+    </body>
 </html>

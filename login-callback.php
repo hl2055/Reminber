@@ -32,8 +32,6 @@ if (! isset($accessToken)) {
 	}
 	exit;
 }	
-
-
 var_dump($accessToken->getValue());
 
 
