@@ -1,7 +1,5 @@
 <?php
-
 	session_start();
-
 	if(!$_SESSION['fb_access_token']){		
 		header("Location: http://www.reminber.com/");
 		exit();
