@@ -3,12 +3,12 @@
 	
 	// return database link: $link
 	function get_db(){
-		$link = mysql_connect('reminbercom.ipagemysql.com', 'reminberteam', 'reminberteam!23'); 
+		$link = mysql_connect('**************', '******************', '***************'); 
 		if (!$link) { 
     		die('Connection Error: ' . mysql_error()); 
 		} 
 
-		mysql_select_db(reminber); 
+		mysql_select_db(***********); 
 
 		return $link;
 	}
